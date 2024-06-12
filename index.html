@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini CRM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mini CRM</h1>
+        <div class="form-container">
+            <h2>Add Customer</h2>
+            <form id="customerForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Add Customer</button>
+            </form>
+        </div>
+        <div class="form-container">
+            <h2>Add Order</h2>
+            <form id="orderForm">
+                <label for="customer_id">Customer ID:</label>
+                <input type="number" id="customer_id" name="customer_id" required>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" step="0.01" required>
+                <button type="submit">Add Order</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
